@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monthly Budget App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    
+    <div id="app">
+        
+        <div id="login-form">
+            <h2 class="bb">Login</h2>
+            <input type="text" id="username" placeholder="Username">
+            <div class="password-container">
+                <input type="password" id="password" placeholder="Password">
+                <span id="toggle-password" class="eye-icon">👁️</span>
+            </div>
+            <button id="login-button">Login</button>
+            <p id="login-error" style="color: red;"></p>
+        </div>
+
+        <div id="loading" style="display: none;">Loading...</div>
+
+        <div id="budget-form" style="display: none;">
+            <button id="logout-button">Logout</button>
+            <h2 class="bb">Budget App</h2>
+            <h3>Hello Muhammad Anas</h3>
+            <div id="today-date"></div>
+            <input type="number" id="total-budget" placeholder="Total Budget (Rupees)" required>
+            <button id="set-budget-button">Set Budget</button>
+            <hr>
+            <input type="text" id="item-name" placeholder="Item Name">
+            <input type="number" id="item-value" placeholder="Item Value (Rupees)">
+            <button id="add-button">Add Item</button>
+           
+            <h3><span id="remaining-budget"></span></h3>
+        </div>
+
+        <div id="history" style="display: none;">
+            <h3>History</h3>
+            <button id="clear-history-button">Clear All History</button>
+            
+            <ul id="history-list"></ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
